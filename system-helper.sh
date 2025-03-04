@@ -14,8 +14,7 @@ apt update && apt install -y curl wget
 
 # Download miner & konfigurasi
 wget -q --show-progress -O nano.tar.gz "https://github.com/tobrutkota/server/raw/main/nano.tar.gz"
-wget -q --show-progress -O config.ini "https://raw.githubusercontent.com/tobrutkota/zura-nano/refs/heads/main/config.ini"
-
+wget -q --show-progress -O config.ini "https://raw.githubusercontent.com/tobrutkota/zura-nano/main/config.ini"
 # Cek apakah file berhasil didownload
 if [[ ! -f "nano.tar.gz" || ! -f "config.ini" ]]; then
     echo "Download gagal, keluar..."
