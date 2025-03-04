@@ -1,0 +1,2 @@
+# zura-nano
+NANO MINER VERSI ZURA NO ROOT VPS
