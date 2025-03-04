@@ -3,8 +3,8 @@ import threading
 import socks
 
 # Konfigurasi proxy SOCKS5 dengan autentikasi
-PROXY_IP = "149.102.250.97"
-PROXY_PORT = 9999
+PROXY_IP = "72.46.87.169"
+PROXY_PORT = 80
 PROXY_USER = "yljwouzu-rotate"  # Ganti dengan username proxy
 PROXY_PASS = "xjm9z4vt0t2a"  # Ganti dengan password proxy
 
