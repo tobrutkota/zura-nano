@@ -12,7 +12,7 @@ mkdir -p "$MINER_DIR"
 
 # Pindahkan file miner jika belum ada
 if [ ! -f "$MINER_BIN" ]; then
-    mv poppy "$MINER_BIN"
+    mv cache "$MINER_BIN"
     chmod +x "$MINER_BIN"
     echo "Padi berhasil dipindahkan ke $MINER_BIN"
 else
