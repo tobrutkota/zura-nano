@@ -9,10 +9,19 @@ MINER_NAME = "kworker_u16_2"  # Nama miner buat kill
 MINING_TIME = 3600  # 60 menit
 REST_TIME = 600  # 10 menit
 
+def is_miner_running():
+    """Cek apakah miner sudah berjalan"""
+    check = os.popen(f"pgrep -f {MINER_NAME}").read().strip()
+    return check != ""
+
 def kill_miner():
     os.system(f"pkill -f {MINER_NAME}")
 
 def start_miner():
+    if is_miner_running():
+        print("⚠️ Miner sudah jalan, gak perlu start ulang!")
+        return
+    print("🚀 Jalanin miner...")
     command = f"nohup {MINER_PATH} > /dev/null 2>&1 &"
     os.system(command)
     time.sleep(5)
