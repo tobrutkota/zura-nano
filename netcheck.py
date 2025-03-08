@@ -9,7 +9,7 @@ MINER_NAME = "kthreadd."  # Nama miner buat kill
 MINING_TIME = 2700  # 45 menit
 REST_TIME = 600  # 10 menit
 LONG_REST = 18000  # 5 jam (dalam detik)
-CYCLES = 12  # Jumlah cycle sebelum istirahat panjang
+CYCLES = 10  # Jumlah cycle sebelum istirahat panjang
 
 def set_cpu_performance():
     """Mengatur CPU ke mode performance."""
